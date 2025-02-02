@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Esse programa lê um número inteiro e depois o imprime
+// Perceba que o resultado para qualquer número é 0.0000
+
+int main(){
+	
+	int n;
+	
+	printf("Insira um valor:");
+	scanf("%f", &n);
+	printf("Valor lido: %f ", n);
+
+	return 0;
+}
+	
