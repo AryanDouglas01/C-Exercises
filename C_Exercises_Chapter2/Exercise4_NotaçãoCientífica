@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Esse programa lê um número do tipo double e depois o imprime na forma de notação científica
+
+int main(){
+	
+	float n;
+	
+	printf("Insira um valor:");
+	scanf("%f", &n);
+	printf("O numero em notacao cientica e: %.5e ", n); //%.5e --> Especificador de formato que indica que o número será impresso em notação científica (também chamada de notação exponencial).
+ 
+	return 0;
+}
