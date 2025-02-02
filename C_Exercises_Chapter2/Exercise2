@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Esse programa lê um número inteiro e depois o imprime
+
+int main(){
+	
+	int n;
+	
+	printf("Insira um numero inteiro:");
+	scanf("%d", &n);
+	printf("O numero e: %d ", n);
+
+	return 0;
+}
+	
