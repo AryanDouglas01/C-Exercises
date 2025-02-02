@@ -1,0 +1,9 @@
+#include <stdio.h>
+// Esse programa escreve "início do programa" e depois "Fim"
+int main(){
+	
+	printf("Inicio do programa\n");
+	printf("Fim\n");
+	
+	return 0;
+}
