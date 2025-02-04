@@ -1,0 +1,16 @@
+// Esse programa lê uma velocidade em Km/ h e a converte em m/s
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+    
+    float velocidade_kmh, velocidade_ms;
+    
+    printf("Insire a velocidade em Km/h");
+    scanf("%f", &velocidade_kmh);
+
+    velocidade_ms = velocidade_kmh/3.6;
+    printf("A velocidade em metros por segundo é de: %f metros por segundo", velocidade_ms);
+    
+    return 0;
+} 
