@@ -1,0 +1,15 @@
+// Esse programa lê um valor em reais e a cotação do dólar. Em seguida, imprima o valor correspondente em dólares.
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+    
+    float reais, cota_dolar, dolar;
+    cota_dolar = 5.77;
+   
+   printf("Insira um valor em reais");
+   scanf("%f", &reais);
+   printf("O valor em dolares é : %f dolar(es)", dolar = reais/cota_dolar);
+   
+    
+    return 0;
