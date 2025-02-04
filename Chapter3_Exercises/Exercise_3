@@ -1,0 +1,18 @@
+// Esse programa lê três valores inteiros e mostra sua soma
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+    
+    int num1, num2, num3;
+    
+    printf("Insira tres números!");
+    scanf("%d %d %d ", &num1,&num2,&num3);
+    
+    int soma = num1 + num2 + num3;
+    
+    printf("A soma desses numeros é : %d", soma );
+    
+    return 0; 
+}
