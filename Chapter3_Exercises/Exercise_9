@@ -1,0 +1,16 @@
+// Esse programa lê um ângulo em graus e o apresenta convertido em radianos.
+#include <stdlib.h>
+#include <stdio.h>
+
+#define PI 3.141592
+
+int main(){
+    
+    float radiano, graus;
+   
+   printf("Insira um valor em graus");
+   scanf("%f", &graus);
+   printf("O valor em radianos é : %f ", radiano = graus*PI/180 );
+   
+    return 0;
+} 
