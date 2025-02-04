@@ -1,0 +1,24 @@
+/* A importância de R$ 780.000,00 será dividida entre três
+ganhadores de um concurso, sendo que:
+
+i. O primeiro ganhador receberá 46% do total.
+ii. O segundo receberá 32% do total.
+iii. O terceiro receberá o restante.
+
+Calcule e imprima a quantia recebida por cada
+um dos ganhadores. */
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+    
+    float valor_importancia = 780000.00;
+    float valor_importancia1,valor_importancia2,valor_importancia3;
+    
+    printf("O primeiro ganhador receberá: %f \n ", valor_importancia1 = valor_importancia* 0.46);
+    printf("O segundo ganhador receberá: %f \n", valor_importancia2 = valor_importancia* 0.32);
+    printf("O terceiro ganhador receberá: %f \n", valor_importancia3= 780000 - valor_importancia1 - valor_importancia2);
+    
+    return 0;
+} 
