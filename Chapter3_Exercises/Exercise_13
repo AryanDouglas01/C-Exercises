@@ -1,0 +1,28 @@
+/* 13) Sejam a e b os catetos de um triângulo cuja hipotenusa h é
+obtida pela equação: sqrt(a*a + b*b)
+
+Faça um programa que leia os valores de a e b, e
+calcule o valor da hipotenusa através da
+fórmula dada. Imprima o resultado. */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.141592
+
+int main(){
+    
+    float cateto_a,cateto_b,hipotenusa;
+    
+    printf("Insira o valor primeiro cateto:");
+    scanf("%f", &cateto_a);
+   printf("Insira o valor do segundo cateto");
+    scanf("%f", &cateto_b);
+    
+    hipotenusa = sqrt(cateto_a*cateto_a + cateto_b*cateto_b);
+    
+    printf("O valor hipotenusa em unidades de comprimento é : %f.", hipotenusa);
+    
+    return 0;
+} 
