@@ -1,0 +1,15 @@
+// Esse programa lê um número real e imprime a quinta parte desse número
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+    
+    float numero;
+    
+    printf("Insira um número!");
+    scanf("%f", &numero);
+    printf("A quinta parte desse número é: %f", numero / 5 );
+    
+    return 0; 
+}
