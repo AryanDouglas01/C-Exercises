@@ -1,0 +1,15 @@
+// Esse programa lê um valor que representa uma temperatura em graus Celsius e a apresenta convertida em graus Fahrenheit.
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+    
+    float Celsius, Fahrenheit;
+   
+   printf("Insira um valor de temperatura em graus Celsius");
+   scanf("%f", &Celsius);
+   printf("O valor em graus Fahrenheit é : %f ", Fahrenheit = Celsius * 9/5 + 32 );
+   
+    
+    return 0;
+} 
