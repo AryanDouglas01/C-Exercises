@@ -1,0 +1,19 @@
+/* Faça um programa que converta uma letra maiúscula em
+letra minúscula. Use a tabela ASCII para isso. */
+
+#include <stdlib.h>
+#include <stdio.h>
+
+
+int main(){
+    
+    char letra, letra_minuscula;
+    
+    printf("Digite uma letra maiuscula:");
+    scanf("%c", &letra);
+    
+    letra_minuscula = letra + 32;
+    
+    printf("A letra minúscula é : %c", letra_minuscula);
+    
+} 
