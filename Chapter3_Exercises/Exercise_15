@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int num, invertido;
+    
+    printf("Digite um número de 3 dígitos: ");
+    scanf("%d", &num);
+    
+    if (num < 100 || num > 999) {
+        printf("O número deve ter exatamente 3 dígitos!\n");
+        return 1;
+    }
+
+    int centena = num / 100;         // Primeiro dígito (centena)
+    int dezena = (num / 10) % 10;    // Segundo dígito (dezena)
+    int unidade = num % 10;          // Terceiro dígito (unidade)
+
+    invertido = (unidade * 100) + (dezena * 10) + centena; // Reorganiza os dígitos
+
+    printf("Número invertido: %d\n", invertido);
+
+    return 0;
+}
