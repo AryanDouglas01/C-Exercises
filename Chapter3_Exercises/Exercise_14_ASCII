@@ -17,3 +17,34 @@ int main(){
     printf("A letra minúscula é : %c", letra_minuscula);
     
 } 
+
+
+/* A soma de 32 funciona porque, na tabela ASCII, as letras maiúsculas e minúsculas têm códigos numéricos fixos com uma diferença de 32.
+
+🔹 Estrutura da Tabela ASCII
+Na tabela ASCII:
+
+As letras maiúsculas vão de 'A' a 'Z' → códigos 65 a 90
+As letras minúsculas vão de 'a' a 'z' → códigos 97 a 122
+Se observar a diferença:
+
+97−65=32,98−66=32,99−67=32,e assim por diante...
+Isso significa que, para converter uma letra maiúscula em minúscula, basta adicionar 32 ao seu código ASCII.
+
+🔹 Em termos binários
+O código ASCII da letra 'A' é 65 em decimal, que em binário é: 'A'  =  01000001  (65 em decimal)
+
+csharp
+'a'  =  01100001  (97 em decimal)
+O código ASCII da letra 'a' é 97 em decimal:
+A única diferença é o 6º bit, que está desligado (0) nas maiúsculas e ligado (1) nas minúsculas:
+
+Maiúscula:  01000001 ('A' = 65)
+Minúscula:  01100001 ('a' = 97)
+
+arduino
+Maiúscula:  01000001 ('A' = 65)
+Minúscula:  01100001 ('a' = 97)
+O valor 32 em binário é 0b00100000, que corresponde exatamente ao bit que precisa ser ativado para transformar a letra maiúscula em minúscula.
+
+Então, somar 32 ao código da letra ativa esse bit, fazendo a conversão! */
