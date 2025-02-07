@@ -18,4 +18,5 @@ int main()
     } else{
         printf("O maior número é:%d", numero2);
     }
+return 0;
 }
