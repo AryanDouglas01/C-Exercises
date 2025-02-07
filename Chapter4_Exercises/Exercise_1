@@ -1,0 +1,18 @@
+// Esse programa lê dois números e mostra qual deles é o maior.
+
+#include<stdio.h>
+
+int main()
+{
+    int numero1,numero2;
+    printf("Escreva dois números:");
+    scanf("%d", &numero1);
+    scanf("%d", &numero2);
+    
+    if(numero1 > numero2){
+        printf("O maior numero é:%d", numero1);
+    } else{
+        
+        printf("O maior número é:%d", numero2);
+    }
+}
