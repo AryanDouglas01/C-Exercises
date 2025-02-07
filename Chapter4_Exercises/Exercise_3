@@ -1,0 +1,17 @@
+// Esse programa lê um número inteiro e verifica se esse número é par ou ímpar.
+
+#include<stdio.h>
+
+int main()
+{
+    int numero;
+    printf("Escreva um número:");
+    scanf("%d", &numero);
+    
+    if(numero%2 == 0){
+        printf("O número é par!");
+
+}   else{
+        printf("O número é ímpar!");
+    }
+}
