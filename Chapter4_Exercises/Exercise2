@@ -1,0 +1,21 @@
+// Esse programa lê dois números e mostra qual deles é o maior.Se, por acaso, os dois números forem iguais, o programa imprime a mensagem “Números iguais”.
+
+#include<stdio.h>
+
+int main()
+{
+    int numero1,numero2;
+    printf("Escreva dois números:");
+    scanf("%d", &numero1);
+    scanf("%d", &numero2);
+    
+    if(numero1 > numero2){
+        printf("O maior numero é:%d", numero1);
+
+    } else if(numero1 == numero2){
+        printf("Números iguais");
+        
+    } else{
+        printf("O maior número é:%d", numero2);
+    }
+}
