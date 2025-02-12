@@ -25,7 +25,7 @@ int main()
    int a,b,c;
    float raiz1,raiz2, delta;
    
-   printf("Uma equação do segundo grau é conhecida pela seguinte lei de formação: a*x*x + b*x + c = 0\n");
+   printf("Uma equação do segundo grau é conhecida pela seguinte lei de formação: ax² + bx + c = 0\n");
    printf("Para descobrirmos as raízes de uma equação, forneça o valor dos três coeficientes a, b e c!\n");
    
    printf("Forneça o valor do coeficiente a\n");
