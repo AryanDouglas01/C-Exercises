@@ -1,0 +1,77 @@
+/******************************************************************************
+
+Faça um programa que mostre ao usuário um menu com
+quatro opções de operações matemáticas (as operações básicas,
+por exemplo). O usuário escolhe uma das opções, e o seu
+programa pede dois valores numéricos e realiza a operação,
+mostrando o resultado.
+*******************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{  
+   int opcao;
+   float a,b,soma,divisao,multiplicacao,subtracao;
+   
+   printf("Bem vindo à calculadora!\n");
+   printf("Para realizar uma operação matemática, digite 1 para Adição, 2 para Subtração, 3 para Divisão e 4 para Multiplicação!\n");
+   scanf("%d", &opcao);
+   
+   switch(opcao){
+       
+       case 1:
+        
+        printf("Digite o primeiro valor!\n");
+        scanf("%f", &a);
+        printf("Digite o segundo valor!\n");
+        scanf("%f", &b);
+        
+        soma = a+b;
+        
+        printf("A soma entre os dois valores é: %.2f!\n", soma);
+        break;
+        
+        case 2:
+        
+        printf("Digite o primeiro valor!\n");
+        scanf("%f", &a);
+        printf("Digite o segundo valor!\n");
+        scanf("%f", &b);
+        
+        subtracao = a-b;
+        
+        printf("A subtração entre os dois valores é: %.2f!\n", subtracao);
+        break;
+        
+        case 3:
+        printf("AVISO: O SEGUNDO VALOR NÃO PODE SER ZERO!\n");
+        printf("Digite o primeiro valor!\n");
+        scanf("%f", &a);
+        printf("Digite o segundo valor!\n");
+        scanf("%f", &b);
+        
+        divisao = a/b;
+        
+        printf("A divisão entre os dois valores é: %.2f!\n", divisao);
+        break;
+        
+        case 4:
+        printf("Digite o primeiro valor!\n");
+        scanf("%f", &a);
+        printf("Digite o segundo valor!\n");
+        scanf("%f", &b);
+        
+        multiplicacao = a*b;
+        
+        printf("A multiplicação entre os dois valores é: %.2f!\n", multiplicacao);
+        break;
+        
+        default:
+         printf("Opção Inválida");
+   }
+        
+   return 0;
+}
+ 
