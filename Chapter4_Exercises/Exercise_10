@@ -1,0 +1,73 @@
+/******************************************************************************
+
+Faça um programa que leia os coeficientes de uma equação
+do segundo grau. Em seguida, calcule e mostre as raízes dessa
+equação, lembrando que as raízes são calculadas como em que ∆ = b*b – 4 * a * c e a*x*x + b*x + c = 0
+
+representa uma equação do segundo grau. A
+variável a tem de ser diferente de zero. Caso
+seja igual, imprima a mensagem “Não é equação de segundo grau”. Do contrário, imprima:
+
+• Se ∆ < 0, não existe real. Imprima a
+mensagem “Não existe raiz”.
+• Se ∆ = 0, existe uma raiz real. Imprima a
+raiz e a mensagem “Raiz única”.
+• Se ∆ > 0, existem duas raízes reais.
+Imprima as raízes.
+*******************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{  
+   int a,b,c;
+   float raiz1,raiz2, delta;
+   
+   printf("Uma equação do segundo grau é conhecida pela seguinte lei de formação: a*x*x + b*x + c = 0\n");
+   printf("Para descobrirmos as raízes de uma equação, forneça o valor dos três coeficientes a, b e c!\n");
+   
+   printf("Forneça o valor do coeficiente a\n");
+   scanf("%d", &a);
+   
+   switch(a){
+       
+       case 0:
+       printf("A equação não é uma equação de segundo grau. Reinicie o programa e insira um valor diferente de 0 para a.\n");
+       break;
+       
+       default:
+       break;
+   }
+   
+   printf("Forneça o valor do coeficiente b\n");
+   scanf("%d", &b);
+
+   printf("Forneça o valor do coeficiente c\n");
+   scanf("%d", &c);
+   
+   delta = b*b - 4 * a * c;
+   printf("O valor de delta é %.2f\n\n", delta);
+   
+   if(delta == 0){
+       
+       printf("A equação possui uma raiz única!\n\n");
+   }
+   else if(delta > 0){
+       
+       printf("A equação possui duas raízes\n\n");
+   } 
+   else if( delta < 0){
+       
+       printf("Não existem soluções reais para esta equação.\n\n");
+   }
+   
+   raiz1 = (-b + sqrt(delta))/(2*a);
+   raiz2 = (-b - sqrt(delta))/(2*a);
+   
+   printf("Soluções da equação: %.2f, %.2f", raiz1, raiz2);
+   
+   return 0;
+}
+ 
