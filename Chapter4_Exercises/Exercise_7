@@ -1,0 +1,50 @@
+/******************************************************************************
+
+Uma empresa vende o mesmo produto para quatro diferentes
+estados. Cada estado possui uma taxa diferente de imposto
+sobre o produto. Faça um programa em que o usuário entre
+com o valor e o estado de destino do produto e o programa
+retorne o preço final do produto acrescido do imposto do
+estado em que ele será vendido. Se o estado digitado não for
+válido, mostrará uma mensagem de erro.
+
+Estados e imposto: MG = 7%, SP = 12%, RJ = 15% e MS = 8%
+*******************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{  
+   float valor, valor_final;
+   char estado[3];
+   
+   printf("Insira o valor do produto:");
+   scanf("%f", &valor);
+   
+   printf("Insira o estado de destino do produto:");
+   scanf("%s", estado);
+   
+   if(strcmp(estado, "MG") == 0){
+      valor_final = valor*1.07;
+   }
+   else if(strcmp(estado, "SP") == 0){
+       valor_final = valor*1.12;
+   }
+   else if(strcmp(estado, "RJ") == 0){
+       valor_final = valor*1.15;
+       
+   }
+    else if(strcmp(estado, "MS") == 0){
+       valor_final = valor*1.08;
+   }    
+   else{
+        printf("Estado inválido");
+   }
+   
+   printf("O estado para onde o produto vai é %s e o valor do produto é R$ %.2f.", estado,valor_final);
+   
+   return 0;
+}
+ 
