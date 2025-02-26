@@ -1,0 +1,28 @@
+/*Faça um programa que leia um número inteiro positivo N e
+imprima todos os números naturais de 0 até N em ordem
+decrescente.*/
+#include <stdio.h>
+
+int main() 
+{
+    int N;
+    
+ 
+    printf("Digite um número inteiro positivo: ");
+    scanf("%d", &N);
+    
+   
+    if (N < 0) 
+	{
+        printf("Por favor, insira um número inteiro positivo.\n");
+        return 1;
+    }
+    
+    for (int i = N; i >= 0; i--) 
+	{
+        printf("%d ", i);
+    }
+    
+    printf("\n");
+    return 0;
+}
