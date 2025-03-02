@@ -1,0 +1,16 @@
+/* Faça um programa que determine e mostre os cinco primeiros
+ múltiplos de 3 considerando números maiores que 0.*/
+
+#include<stdio.h>
+
+int main(void)
+{	
+	int n = 18;
+	for(int i = 3; i<=n; i = i+3)
+	{
+		printf("%d ", i);
+	}
+	
+	printf("\n");
+	return 0;
+}
