@@ -1,0 +1,19 @@
+// Faça um programa que leia 10 inteiros e imprima sua média.
+
+#include <stdio.h>
+
+int main() {
+    int numero, soma = 0;
+    
+    printf("Insira 10 numeros:\n");
+    
+    for(int n = 0; n < 10; n++) { // Corrigido para iterar corretamente
+        scanf("%d", &numero);
+        soma += numero; // Somar após ler o número
+    }
+
+    printf("A soma dos numeros digitados eh %d\n", soma);
+    printf("A média dos numeros é: %d", soma/10);
+    
+    return 0;
+}
