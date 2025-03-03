@@ -1,0 +1,29 @@
+// Escreva um programa que leia 10 números e escreva o menor valor lido e o maior valor lido.
+#include <stdio.h>
+
+int main() {
+    int numero, maior, menor;
+    
+    printf("Insira 10 números:\n");
+    
+    // Lendo o primeiro número para inicializar maior e menor
+    scanf("%d", &numero);
+    maior = menor = numero;
+    
+    // Loop para ler os próximos 9 números
+    for (int i = 1; i < 10; i++) {
+        scanf("%d", &numero);
+        
+        if (numero > maior) {
+            maior = numero;
+        }
+        if (numero < menor) {
+            menor = numero;
+        }
+    }
+    
+    printf("O maior número lido foi: %d\n", maior);
+    printf("O menor número lido foi: %d\n", menor);
+    
+    return 0;
+}
