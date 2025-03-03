@@ -1,20 +1,16 @@
-/*  Elabore um programa que peça ao usuário para digitar 10
- valores. Some esses valores e apresente o resultado na tela.*/
-
 #include <stdio.h>
 
 int main() {
+    int numero, soma = 0;
     
-  int numero,soma = 0;
-	printf("Insira 10 numeros\n ");
-	
-    for(int n = 10; n >= 0; n--)
-	{
-		soma = soma + numero;
-		scanf("%d", &numero);
-	}
+    printf("Insira 10 numeros:\n");
+    
+    for(int n = 0; n < 10; n++) { // Corrigido para iterar corretamente
+        scanf("%d", &numero);
+        soma += numero; // Somar após ler o número
+    }
 
-	printf("A soma dos numeros digitados eh %d", soma);
-	printf("\n");
+    printf("A soma dos numeros digitados eh %d\n", soma);
+    
     return 0;
 }
