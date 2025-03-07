@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n; // Variável para armazenar o número de linhas do triângulo
+    
+    // Solicita ao usuário que insira o número de linhas
+    printf("Digite o número de linhas do triângulo: ");
+    scanf("%d", &n);
+
+    // Loop externo controla as linhas do triângulo
+    for (int i = 1; i <= n; i++) {
+        
+        // Loop interno controla a quantidade de asteriscos por linha
+        for (int j = 1; j <= i; j++) {
+            printf("*"); // Imprime um asterisco na mesma linha
+        }
+        
+        printf("\n"); // Quebra a linha para iniciar a próxima linha do triângulo
+    }
+
+    return 0; // Retorna 0 indicando que o programa finalizou corretamente
+}
