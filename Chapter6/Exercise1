@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int valores[6];
+
+    printf("Digite seis valores inteiros:\n");
+
+    // Loop para ler os 6 valores do usuário
+    for (int i = 0; i < 6; i++) {
+        printf("Valor %d: ", i + 1);  // Mensagem para indicar qual valor está sendo lido
+        scanf("%d", &valores[i]);
+    } 
+
+    // Exibição dos valores
+    printf("\nOs 6 valores digitados foram:\n");
+
+    for (int i = 0; i < 6; i++) {
+        printf("%d ", valores[i]);  // Exibe os valores em uma única linha, separados por espaço
+    }
+
+    printf("\n");  // Para melhorar a organização visual
+    return 0;
+}
