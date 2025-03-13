@@ -1,0 +1,29 @@
+/*  Faça um programa que leia cinco valores e os armazene em um vetor. Em
+ seguida, mostre todos os valores lidos juntamente com a média dos valores. */
+ 
+#include <stdio.h>
+
+int main() {
+   
+   float media;
+   int valor[5];
+   
+	printf("Digite 5 valores\n");
+   for(int i = 0; i < 5; i++)
+   {
+   	printf("\nValor %d:", i+1);
+   	scanf("%d", &valor[i]);
+   }
+   printf("Os 5 valores sao:");
+   
+   for(int i = 0; i<5; i++)
+   {
+   	printf("%d ", valor[i]);
+   	
+   }
+   
+   media = (float)(valor[0]+valor[1]+valor[2]+valor[3]+valor[4])/5;
+   
+   printf("\nA media dos valores eh %.2f ", media);
+}
+
