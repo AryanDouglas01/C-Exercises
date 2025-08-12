@@ -1,0 +1,24 @@
+ /* 5) Faça um programa que leia um vetor de oito posições. Em seguida, leia
+também dois valores X e Y quaisquer correspondentes a duas posições no
+vetor. Seu programa deverá exibir a soma dos valores encontrados nas
+respectivas posições X e Y.*/
+
+#include <stdio.h>
+
+int main()
+{
+    int vetor[8] = {12,43,32,64,7,45,75,90};
+    int x,y;
+    int soma;
+    
+    printf("Insira o valor de uma posição do vetor:");
+    scanf("%d", &x);
+    printf("Insira o valor de uma posição do vetor:");
+    scanf("%d", &y);
+    
+    soma = vetor[x] + vetor[y];
+    
+    printf("A soma dos valores das posições selecionadas é: %d", soma);
+    
+    return 0;
+}
